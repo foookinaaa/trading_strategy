@@ -9,7 +9,7 @@
 - add macro indicators
 - add transformations with prices
 
-Total: 300 tickers S&P500 (with longest history + newest) -> 1_168_800 rows
+Total: 300 tickers S&P500 (with longest history + newest) -> 1_175_400 rows
 
 ### Data Transformations
 
