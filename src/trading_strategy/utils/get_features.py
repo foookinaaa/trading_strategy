@@ -25,18 +25,23 @@ def get_growth(
 
 
 def get_macro_indicator_pdr(
-    ticker: str, start_date: str, drop_original_column: bool = True
+    ticker: str,
+    start_date: str,
+    drop_original_column: bool = True,
+    is_get_growth: bool = True,
 ) -> pd.DataFrame:
     """
     Collect ticker from fred
     :param ticker: ticker name
     :param start_date: start date for collect
     :param drop_original_column: True if drop column 'ticker' with abs price, else False
+    :param is_get_growth: True if call get_growth function for new columns, else False
     :return: dataframe with growth columns for ticker
         + [Date, year, month]
     """
     df = pdr.DataReader(ticker, "fred", start=start_date)
-    df = get_growth(df, ticker, drop_original_column)
+    if is_get_growth:
+        df = get_growth(df, ticker, drop_original_column)
     df.reset_index(inplace=True)
     df.rename({"DATE": "Date"}, axis=1, inplace=True)
     df["Date"] = pd.to_datetime(df["Date"])
