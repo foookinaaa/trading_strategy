@@ -20,8 +20,28 @@ let's first predict is_positive_growth_30d_future and growth_future_30d \
 file: notebooks/eda.ipynb
 
 ### Modeling
-- Train data: 2010-01-04 - ... ; time split validation on 5 folds
+- Train data: 2010-01-04 - 2023-12-31; time split validation on 5 folds
 - Test data: 2024-01-01 - 2025-01-08
+for is_positive_growth_30d_future 30-45% -> 0 and 55-70% -> 1 \
+file: notebooks/eda.ipynb \
+
+##### Baseline
+Simple strategy: buy when SMA10 is lower and intersects SMA20, sell when they intersect again in the upper side \
+Realisation through growing_moving_average -> is_positive_growth_30d_future
+ * accuracy: 0.504
+ * roc_auc: 0.495
+ * precision: 0.57
+ * recall: 0.555
+
+##### Desicion tree
+MAX_DEPTH = 10 + drop unimportant features
+* accuracy: 0.527
+* roc_auc: 0.508
+* precision: 0.581
+* recall: 0.631
+
+##### Random Forest
+
 
 ### Trading Simulation
 
