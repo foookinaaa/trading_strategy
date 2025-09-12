@@ -1,5 +1,6 @@
 # Trading strategy
 ### Problem
+Predict trend in the next 30 days will go up or not for S&P500 tickers that was in the index for more than 20 years and appeared in past 5 years
 
 ### Data Sources
 - Take S&P500 tickers
