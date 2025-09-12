@@ -41,7 +41,13 @@ MAX_DEPTH = 10 + drop unimportant features
 * recall: 0.631
 
 ##### Random Forest
+MAX_DEPTH = 10 + drop unimportant features
+* accuracy: 0.573
+* roc_auc: 0.506
+* precision: 0.578
+* recall: 0.956
 
+Let's continue with random forest for now
 
 ### Trading Simulation
 
