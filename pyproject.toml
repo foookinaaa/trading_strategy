@@ -13,6 +13,7 @@ lxml = "^6.0.0"
 matplotlib = "^3.10.5"
 prophet = "^1.1.7"
 pandas-datareader = "^0.10.0"
+scikit-learn = "^1.7.1"
 
 
 [tool.poetry.group.dev.dependencies]
