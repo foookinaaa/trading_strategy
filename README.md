@@ -51,5 +51,4 @@ MAX_DEPTH = 10 + drop unimportant features
 Let's continue with random forest for now
 
 ### Trading Simulation
-
-### Automation
+Simple simulation with maximising CAGR in 4 years
