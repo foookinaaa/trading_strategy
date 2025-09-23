@@ -1,6 +1,10 @@
 # Trading strategy
 ### Problem
-Predict trend in the next 30 days will go up or not for S&P500 tickers that was in the index for more than 20 years and appeared in past 5 years
+Predict trend in the next 30 days will go up or not for S&P500 tickers that was in the index for more than 20 years and appeared in past 5 years \
+Pipeline:
+- collect_data: for create datset for training
+- eda: for choose features and model for predictions
+- simulation: for simulate results, what we can earn
 
 ### Data Sources
 - Take S&P500 tickers
